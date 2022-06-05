@@ -4,7 +4,7 @@ metadata:
   name: voicevox
 spec:
   ports:
-  - protocol: HTTP
+  - protocol: TCP
     port: 50021
     targetPort: 50021
   selector:
