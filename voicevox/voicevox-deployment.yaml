@@ -14,7 +14,7 @@ spec:
         app: voicevox
     spec:
       containers:
-      - image: hub.docker.com/voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+      - image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
         name: voicevox
         ports:
         - containerPort: 50021
