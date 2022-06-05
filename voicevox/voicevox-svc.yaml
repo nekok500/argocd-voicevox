@@ -4,11 +4,7 @@ metadata:
   name: voicevox
 spec:
   ports:
-  - protocol: TCP
-    port: 50021
+  - port: 50021
     targetPort: 50021
   selector:
     app: voicevox
-  type: LoadBalancer
-  externalIPs:
-    - 192.168.122.124
