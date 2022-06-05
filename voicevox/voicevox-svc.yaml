@@ -10,3 +10,7 @@ spec:
   selector:
     app: voicevox
   type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 192.168.122.124
