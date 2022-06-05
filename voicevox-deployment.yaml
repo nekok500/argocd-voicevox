@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voicevox
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: voicevox
+  template:
+    metadata:
+      labels:
+        app: voicevox
+    spec:
+      containers:
+      - image: hub.docker.com/voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+        name: voicevox
+        ports:
+        - containerPort: 50021
