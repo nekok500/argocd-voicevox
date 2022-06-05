@@ -4,7 +4,9 @@ metadata:
   name: voicevox
 spec:
   ports:
-  - port: 50021
+  - protocol: HTTP
+    port: 50021
     targetPort: 50021
   selector:
     app: voicevox
+  type: LoadBalancer
